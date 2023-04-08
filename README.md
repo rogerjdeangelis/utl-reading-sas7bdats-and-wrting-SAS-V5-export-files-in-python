@@ -203,7 +203,8 @@ Reading sas7bdats and wrting SAS V5 export file in python
     print(meta.number_columns);                                                                                             
     print(meta.file_label);                                                                                                 
     print(meta.file_encoding);                                                                                              
-    pyreadstat.write_xport(want, 'd:/xpt/want.xpt',table_name='want');                                                      
+    pyreadstat.write_xport(want, 'd:/xpt/want.xpt',table_name='want',file_format_version=5);   
+);                                                      
     ");                                                                                                                     
                                                                                                                             
     libname xpt xport "d:/xpt/want.xpt";                                                                                    
